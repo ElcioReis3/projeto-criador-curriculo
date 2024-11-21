@@ -9,94 +9,144 @@
 </head>
 
 <body>
-    <header class="w-full h-28 bg-slate-700">
-        <div></div>
-    </header>
-    <main class="p-2">
-        <h1 class="font-semibold text-center text-3xl py-8">Gere seu currículo</h1>
+
+    <main class="">
+        <h1 class="font-semibold text-center text-xl py-8">Gere seu currículo</h1>
         <form
-            class="flex gap-4 flex-col flex-wrap justify-center font-semibold shadow-md p-4 bg-slate-100 rounded-lg border"
+            class="flex gap-2 flex-col flex-wrap justify-center font-semibold shadow-lg p-2 bg-slate-200 rounded-lg border max-w-2xl m-auto"
             action="">
             <div class="flex gap-4 items-center">
-                <label for="name">Seu nome:</label>
+                <label for="name">NOME:</label>
                 <input class="input flex-1" type="text" placeholder="Seu nome" id="name" required>
             </div>
             <div class="flex gap-4 items-center">
-                <label for="object">Obejtivo:</label>
+                <label for="object">OBJETIVO:</label>
                 <textarea class="areaText w-full" name="object" id="object" placeholder="Digite..."></textarea>
             </div>
-            <div class="schoolContent flex flex-wrap items-center gap-4">
-                <label for="labelSchool">Formação escolar:</label>
-                <div class="flex gap-4 flex-wrap">
-                    <input class="input flex-1" type="text" placeholder="Ensino médio..." id="labelSchool">
-                    <input class="input flex-1" type="text" placeholder="Escola">
-                    <input class="input w-44" type="number" placeholder="Ano de conclução" min="2000">
-                    <button class="buttonAdd">Adicionar</button>
+            <div class="schoolContent flex flex-col gap-2">
+                <label for="labelSchool">FORMAÇÃO ESCOLAR:</label>
+                <div class="grid grid-cols-2 grid-rows-3 gap-2 flex-wrap">
+                    <input class="input col-start-1 col-end-3" type="text" placeholder="Ensino médio..."
+                        id="labelSchool">
+                    <input class="input col-start-1 col-end-3" type="text" placeholder="Escola">
+                    <input class="input" type="number" placeholder="Ano de conclução" min="2000">
+                    <button class="buttonAdd w-min row-start-3 row-end-4">Adicionar</button>
                 </div>
                 <ul class="list">
                     <li class="hidden"></li>
                 </ul>
             </div>
-            <div class="experience flex flex-wrap items-center gap-4">
-                <label for="labelExp">Experiência Profissional:</label>
-                <div class="flex items-center flex-wrap gap-4">
-                    <input class="input flex-1" type="text" placeholder="Empresa" id="labelExp">
-                    <input class="input flex-1" type="number" placeholder="Ano de início" min="1900">
-                    <input class="input w-44" type="number" name="" id="" placeholder="Ano de término" min="2000">
-                    <textarea id="areaText" class="areaText w-full" name="experience" id="experience"
-                        placeholder="cargo e função desenvolvida"></textarea>
-                    <button class="buttonAdd">Adicionar</button>
+            <div class="experience flex flex-col gap-2">
+                <label for="labelExp">EXPERIÊNCIAS PROFISSIONAIS:</label>
+                <div class="grid items-center flex-wrap gap-2 grid-cols-2">
+                    <input class="input col-start-1 col-end-3" type="text" placeholder="Empresa" id="labelExp">
+                    <input class="input" type="number" placeholder="Ano de início" min="1900">
+                    <input class="input" type="number" name="" id="" placeholder="Ano de término" min="2000">
+                    <textarea id="areaText" class="areaText w-full col-start-1 col-end-3" name="experience"
+                        id="experience" placeholder="cargo e função desenvolvida"></textarea>
+                    <button class="buttonAdd w-min">Adicionar</button>
                 </div>
                 <ul class="list">
                     <li class="hidden"></li>
                 </ul>
             </div>
-            <div class="flex flex-col gap-4">
-                <label for="labelObs">Observações</label>
-                <div class="w-full flex flex-col items-start gap-4">
+            <div class="flex flex-col gap-2">
+                <label for="labelObs">OBSERVAÇÕES</label>
+                <div class="w-full flex flex-col items-start gap-2">
                     <textarea class="areaText w-full" name="labelObs" id="obs" placeholder="CNH etc..."></textarea>
                     <!-- <button class="buttonAdd">Adicionar</button> -->
                 </div>
             </div>
-            <div class="formationSchool flex flex-wrap items-center gap-4">
-                <label for="labelFormation">Formação Técnica e/ou Superior:</label>
-                <div class="w-full flex items-center flex-wrap gap-4">
-                    <input class="input flex-1" type="text" placeholder="Instituto de ensino" id="labelFormation">
-                    <input class="input flex-1" type="text" name="" id="" placeholder="Formado em ...">
-                    <input class="input w-44" type="number" name="" id="" placeholder="Ano de término" min="2000">
-                    <button class="buttonAdd">Adicionar</button>
+            <div class="formationSchool flex flex-wrap items-center gap-2">
+                <label for="labelFormation">FORMAÇÃO TÉCNICA E/OU SUPERIOR:</label>
+                <div class="w-full grid grid-cols-2 grid-rows-3 flex-wrap gap-2">
+                    <input class="input col-start-1 col-end-3" type="text" placeholder="Instituto de ensino"
+                        id="labelFormation">
+                    <input class="input col-start-1 col-end-3" type="text" name="" id="" placeholder="Formado em ...">
+                    <input class="input " type="number" name="" id="" placeholder="Ano de término" min="2000">
+                    <button class="buttonAdd w-min row-start-3 row-end-4">Adicionar</button>
                 </div>
                 <ul class="list">
                     <li class="hidden"></li>
                 </ul>
             </div>
-            <div class="progress flex flex-wrap items-center gap-4">
-                <label for="labelProf">Cursos profissionalizantes:</label>
-                <div class="flex items-center flex-wrap gap-4">
-                    <input class="input flex-1" type="text" placeholder="Instituto de ensino" id="labelProf">
-                    <input class="input flex-1" type="text" name="" id="" placeholder="Curso...">
-                    <input class="input flex-1" type="text" name="" id="" placeholder="Carga horária">
-                    <input class="input w-44" type="number" name="" id="" placeholder="Ano de término" min="2000">
-                    <button class="buttonAdd">Adicionar</button>
+            <div class="progress flex flex-col gap-2">
+                <label for="labelProf">CURSOS PROFISSIONALIZANTES:</label>
+                <div class="grid grid-cols-2 items-center flex-wrap gap-2">
+                    <input class="input col-start-1 col-end-3" type="text" placeholder="Instituto de ensino"
+                        id="labelProf">
+                    <input class="input col-start-1 col-end-3" type="text" name="" id="" placeholder="Curso...">
+                    <input class="input col-start-1 col-end-2" type="text" name="" id="" placeholder="Carga horária">
+                    <input class="input col-start-2 col-end-3" type="number" name="" id="" placeholder="Ano de término"
+                        min="2000">
+                    <button class="buttonAdd w-min">Adicionar</button>
                 </div>
                 <ul class="list">
                     <li class="hidden"></li>
                 </ul>
             </div>
-            <div class="max-w-screen-xl flex flex-wrap gap-4 m-auto ">
-                <div class="w-full flex flex-wrap items-start">
-                    <label for="email" class="px-7">E-mail:</label>
+            <div class="max-w-screen-xl flex flex-wrap gap-2 m-auto ">
+                <div class="w-full flex flex-col">
+                    <label for="email">E-MAIL:</label>
                     <input class="input flex-1" type="email" placeholder="E-mail" required id="email">
                 </div>
-                <div class="w-full flex flex-wrap items-start">
-                    <label for="phone" class="px-7">Telefone:</label>
+                <div class="w-full flex flex-col">
+                    <label for="phone">TELEFONE:</label>
                     <input class="input flex-1" type="tel" placeholder="Telefone" required id="phone">
                 </div>
             </div>
             <button class="buttonAdd create w-max m-auto" onclick="handleInputs()">Gerar currículo</button>
         </form>
-        <section>
+        <section class="modal w-full min-h-fit bg-white py-[400px] absolute top-0 left-0 hidden">
+            <div class="areaPrint w-[673px] p-6 shadow shadow-slate-400 rounded-lg m-auto">
+                <div class="flex justify-between min-h-32 text-2xl font-semibold">
+                    <div class="flex-1">
+                        <span class="">Name</span>
+                        <div class="flex flex-col border-t border-slate-500 text-sm font-semibold">
+                            <span>e-mail: </span>
+                            <span>Tefefone: </span>
+                        </div>
+                    </div>
+                    <div class="w-[115px] h-[153px] border border-slate-400 m-2"></div>
+                </div>
 
+                <div class=" flex flex-col border-t border-slate-500 text-sm font-semibold">
+                    <span class="font-bold bg-gray-300">OBJETIVO</span>
+                    <div class="areaSpans w-full min-h-20">
+
+                    </div>
+                    <span class="font-bold border-t border-slate-500 bg-gray-300">EXPERIÊNCIAS PROFISSIONAIS</span>
+                    <div class="areaSpans w-full min-h-20">
+
+                    </div>
+                </div>
+                <div class="flex flex-col border-t border-slate-500 text-sm font-semibold">
+                    <span class="font-bold  bg-gray-300">FORMAÇÃO ESCOLAR</span>
+                    <div class="areaSpans w-full min-h-14">
+
+                    </div>
+                    <span class="font-bold border-t border-slate-500  bg-gray-300">FORMAÇÃO TÉCNICA E/OU SUPERIOR</span>
+                    <div class="areaSpans w-full min-h-14">
+
+                    </div>
+                    <span class="font-bold border-t border-slate-500  bg-gray-300">CURSOS PROFISSIONALIZANTES</span>
+                    <div class="areaSpans w-full min-h-14">
+
+                    </div>
+                </div>
+                <div class="flex flex-col border-t border-slate-500 text-sm font-semibold">
+                    <span class="font-bold">OBSERVAÇÕES:</span>
+                    <div class="areaSpans w-full min-h-10">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-[673px] flex flex-wrap justify-between m-auto">
+                <button onclick="imprimir()" class="text-slate-600 font-semibold">Imprimir</button>
+                <button onclick="closeModal()" class="text-slate-600 font-semibold">Fechar</button>
+            </div>
         </section>
     </main>
     <script src="/src/js/script.js"></script>

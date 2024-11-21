@@ -5,15 +5,10 @@ const experience = document.querySelectorAll('.experience');
 const progress = document.querySelectorAll('.progress');
 const inputs = document.querySelectorAll('input');
 const textAreas = document.querySelectorAll('textarea')
+const lists = document.querySelectorAll('.list')
 
-function handleInputs() {
-
-    document.querySelector('section').innerHTML =
-        `${inputs[0].value}<br>
-        ${inputs[14].value}<br>
-        ${inputs[15].value}<br>
-        ${textAreas[0].value}<br>
-        ${textAreas[2].value}<br>`
+function closeModal() {
+    document.querySelector('.modal').style.display = 'none'
 
 }
 
@@ -30,7 +25,7 @@ formationSchool.forEach((item) => {
 
     button.addEventListener('click', (event) => {
         if (inputs[0].value !== '' && inputs[1].value !== '' && inputs[2].value !== '') {
-            area.innerHTML += `<li class="ml-7 p-2 list-disc">${inputs[0].value} - ${inputs[1].value} / ${inputs[2].value}</li>`
+            area.innerHTML += `<li class="ml-4 p-2 list-disc">${inputs[0].value} - ${inputs[1].value} / ${inputs[2].value}</li>`
         }
         inputs[0].value = ''
         inputs[1].value = ''
@@ -44,7 +39,7 @@ formation.forEach((item) => {
 
     button.addEventListener('click', (event) => {
         if (inputs[0].value !== '' && inputs[1].value !== '' && inputs[2].value !== '') {
-            area.innerHTML += `<li class="ml-7 p-2 list-disc">${inputs[0].value} - ${inputs[1].value} / ${inputs[2].value}</li>`
+            area.innerHTML += `<li class="ml-4 p-2 list-disc">${inputs[0].value} - ${inputs[1].value} / ${inputs[2].value}</li>`
         }
         inputs[0].value = ''
         inputs[1].value = ''
@@ -60,7 +55,7 @@ experience.forEach((item) => {
 
     button.addEventListener('click', (event) => {
         if (inputs[0].value !== '' && inputs[1].value !== '' && inputs[2].value !== '') {
-            area.innerHTML += `<li class="ml-7 p-2 list-disc">${inputs[0].value}- ${textArea.value} / ${inputs[1].value} até ${inputs[2].value}</li>`;
+            area.innerHTML += `<li class="ml-4 p-2 list-disc">${inputs[0].value}- ${textArea.value} / ${inputs[1].value} até ${inputs[2].value}</li>`;
         }
         inputs[0].value = ''
         inputs[1].value = ''
@@ -76,7 +71,7 @@ progress.forEach((item) => {
 
     button.addEventListener('click', (event) => {
         if (inputs[0].value !== '' && inputs[1].value !== '' && inputs[2].value !== '') {
-            area.innerHTML += `<li class="ml-7 p-2 list-disc">${inputs[0].value} - ${inputs[1].value} - ${inputs[2].value} / ${inputs[3].value}</li>`;
+            area.innerHTML += `<li class="ml-4 p-2 list-disc">${inputs[0].value} - ${inputs[1].value} - ${inputs[2].value} / ${inputs[3].value}</li>`;
         }
         inputs[0].value = ''
         inputs[1].value = ''

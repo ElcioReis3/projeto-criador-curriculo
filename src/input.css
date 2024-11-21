@@ -4,18 +4,21 @@
 
 @layer components {
   .input {
-    @apply p-2 rounded-md outline-none border border-slate-400;
+    @apply p-1 text-xs rounded-md outline-none border border-slate-400;
   }
   .buttonAdd {
-    @apply px-4 py-2 rounded-md bg-blue-300 font-semibold hover:bg-blue-400;
+    @apply px-2 py-1 text-xs rounded-md bg-blue-300 font-semibold  hover:bg-blue-400;
   }
   .areaText {
-    @apply w-2/4 p-4 border border-slate-400 rounded-md resize-none outline-none;
+    @apply w-2/4 p-2 text-xs border border-slate-400 rounded-md resize-none outline-none;
   }
   .list {
     @apply w-full border-b border-slate-500;
   }
   li {
-    @apply ml-7 p-2 list-disc;
+    @apply ml-7 p-2 list-disc text-sm;
+  }
+  label {
+    @apply text-xs;
   }
 }
