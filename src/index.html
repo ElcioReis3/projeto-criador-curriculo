@@ -17,7 +17,7 @@
             action="">
             <div class="flex gap-4 items-center">
                 <label for="name">NOME:</label>
-                <input class="input flex-1" type="text" placeholder="Seu nome" id="name" required>
+                <input class="input flex-1" type="text" placeholder="Seu nome" id="name" required autocomplete="on">
             </div>
             <div class="flex gap-4 items-center">
                 <label for="object">OBJETIVO:</label>
@@ -88,14 +88,15 @@
             <div class="max-w-screen-xl flex flex-wrap gap-2 m-auto ">
                 <div class="w-full flex flex-col">
                     <label for="email">E-MAIL:</label>
-                    <input class="input flex-1" type="email" placeholder="E-mail" required id="email">
+                    <input class="input flex-1" type="email" placeholder="E-mail" required id="email"
+                        autocomplete="email">
                 </div>
                 <div class="w-full flex flex-col">
                     <label for="phone">TELEFONE:</label>
-                    <input class="input flex-1" type="tel" placeholder="Telefone" required id="phone">
+                    <input class="input flex-1" type="tel" placeholder="Telefone" required id="phone" autocomplete="on">
                 </div>
             </div>
-            <button class="buttonAdd create w-max m-auto" onclick="handleInputs()">Gerar currículo</button>
+            <button class="buttonAdd create w-max m-auto" onclick="handleInputs()">PRÉ-VISUALIZAR</button>
         </form>
         <section class="modal w-full min-h-fit bg-white py-[400px] absolute top-0 left-0 hidden">
             <div class="areaPrint w-[673px] p-6 shadow shadow-slate-400 rounded-lg m-auto">
@@ -111,25 +112,28 @@
                 </div>
 
                 <div class=" flex flex-col border-t border-slate-500 text-sm font-semibold">
-                    <span class="font-bold bg-gray-300">OBJETIVO</span>
+                    <span class="font-bold bg-gray-300 print:bg-gray-300">OBJETIVO</span>
                     <div class="areaSpans w-full min-h-20">
 
                     </div>
-                    <span class="font-bold border-t border-slate-500 bg-gray-300">EXPERIÊNCIAS PROFISSIONAIS</span>
+                    <span class="font-bold border-t border-slate-500 bg-gray-300 print:bg-gray-300">EXPERIÊNCIAS
+                        PROFISSIONAIS</span>
                     <div class="areaSpans w-full min-h-20">
 
                     </div>
                 </div>
                 <div class="flex flex-col border-t border-slate-500 text-sm font-semibold">
-                    <span class="font-bold  bg-gray-300">FORMAÇÃO ESCOLAR</span>
+                    <span class="font-bold  bg-gray-300 print:bg-gray-300">FORMAÇÃO ESCOLAR</span>
                     <div class="areaSpans w-full min-h-14">
 
                     </div>
-                    <span class="font-bold border-t border-slate-500  bg-gray-300">FORMAÇÃO TÉCNICA E/OU SUPERIOR</span>
+                    <span class="font-bold border-t border-slate-500 bg-gray-300 print:bg-gray-300">FORMAÇÃO TÉCNICA
+                        E/OU SUPERIOR</span>
                     <div class="areaSpans w-full min-h-14">
 
                     </div>
-                    <span class="font-bold border-t border-slate-500  bg-gray-300">CURSOS PROFISSIONALIZANTES</span>
+                    <span class="font-bold border-t border-slate-500 bg-gray-300 print:bg-gray-300">CURSOS
+                        PROFISSIONALIZANTES</span>
                     <div class="areaSpans w-full min-h-14">
 
                     </div>
@@ -149,6 +153,11 @@
             </div>
         </section>
     </main>
+    <footer class="w-full bg-gray-900 h-28 p-4 text-center">
+        <p class=" text-gray-500 m-auto">Criado por
+        </p>
+        <a class="font-semibold text-gray-100" href="">&copy;ÉlcioErviçosOn</a>
+    </footer>
     <script src="/src/js/script.js"></script>
     <script src="/src/js/create.js"></script>
 </body>
