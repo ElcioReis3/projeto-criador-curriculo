@@ -88,18 +88,17 @@
             <div class="max-w-screen-xl flex flex-wrap gap-2 m-auto ">
                 <div class="w-full flex flex-col">
                     <label for="email">E-MAIL:</label>
-                    <input class="input flex-1" type="email" placeholder="E-mail" required id="email"
-                        autocomplete="email">
+                    <input class="input flex-1" type="email" placeholder="E-mail" required id="email">
                 </div>
                 <div class="w-full flex flex-col">
                     <label for="phone">TELEFONE:</label>
-                    <input class="input flex-1" type="tel" placeholder="Telefone" required id="phone" autocomplete="on">
+                    <input class="input flex-1" type="tel" placeholder="Telefone" required id="phone">
                 </div>
             </div>
             <button class="buttonAdd create w-max m-auto" onclick="handleInputs()">PRÉ-VISUALIZAR</button>
         </form>
-        <section class="modal w-screen min-h-fit bg-white py-[400px] absolute top-0 left-0 hidden">
-            <div class="areaPrint w-[673px] p-6 shadow shadow-slate-400 rounded-lg m-auto">
+        <section class="modal w-screen min-h-fit py-[200px] bg-white absolute top-0 hidden">
+            <div class="areaPrint w-[643px] p-6 shadow shadow-slate-400 rounded-lg m-auto bg-white">
                 <div class="flex justify-between min-h-32 text-2xl font-semibold">
                     <div class="flex-1">
                         <span class="">Name</span>
@@ -147,7 +146,7 @@
             </div>
 
 
-            <div class="w-[673px] flex flex-wrap justify-between m-auto">
+            <div class="w-[473px] flex flex-wrap justify-between m-auto">
                 <button onclick="imprimir()" class="text-slate-600 font-semibold">Imprimir</button>
                 <button onclick="closeModal()" class="text-slate-600 font-semibold">Fechar</button>
             </div>

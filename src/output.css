@@ -622,10 +622,6 @@ label {
   position: absolute;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -735,6 +731,18 @@ label {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[473px\] {
+  width: 473px;
+}
+
+.w-\[573px\] {
+  width: 573px;
+}
+
+.w-\[643px\] {
+  width: 643px;
 }
 
 .max-w-2xl {
@@ -852,9 +860,9 @@ label {
   padding-bottom: 2rem;
 }
 
-.py-\[400px\] {
-  padding-top: 400px;
-  padding-bottom: 400px;
+.py-\[200px\] {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .text-center {
