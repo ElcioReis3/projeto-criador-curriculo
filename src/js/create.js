@@ -21,14 +21,14 @@ function handleJson(keyList, listUl) {
     }
 };
 handleJson('.formationSchool', '.formationSchool');
-handleJson('.schoolContent', '.schoolContent');
+handleJson('.formation', '.formation'); //teste
 handleJson('.experience', '.experience');
 handleJson('.progress', '.progress');
 
 buttons.forEach((item) => {
     item.addEventListener('click', (event) => {
         handleList('.formationSchool');
-        handleList('.schoolContent');
+        handleList('.formation');
         handleList('.experience');
         handleList('.progress');
     })
@@ -54,9 +54,18 @@ function handleInputs() {
 function imprimir() {
     const divContent = document.querySelector('.areaPrint').innerHTML
     const originalContent = document.body.innerHTML
-
     document.body.innerHTML = divContent
     window.print()
-
     document.body.innerHTML = originalContent
 }
+
+
+function clearStorage(element, stringEl) {
+    element.forEach((item) => item.querySelector('ul').innerHTML = '')
+    localStorage.setItem(`Key_${stringEl}`, '[]')
+}
+
+btnsClear[0].onclick = () => { clearStorage(formation, '.formation') }
+btnsClear[1].onclick = () => { clearStorage(experience, '.experience') }
+btnsClear[2].onclick = () => { clearStorage(formationSchool, '.formationSchool') }
+btnsClear[3].onclick = () => { clearStorage(progress, '.progress') }

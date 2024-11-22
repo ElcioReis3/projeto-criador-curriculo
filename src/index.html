@@ -17,14 +17,15 @@
             action="">
             <div class="flex gap-4 items-center">
                 <label for="name">NOME:</label>
-                <input class="input flex-1" type="text" placeholder="Seu nome" id="name" required autocomplete="on">
+                <input class="input flex-1" type="text" placeholder="Seu nome" id="name" required autocomplete="name">
             </div>
             <div class="flex gap-4 items-center">
                 <label for="object">OBJETIVO:</label>
                 <textarea class="areaText w-full" name="object" id="object" placeholder="Digite..."></textarea>
             </div>
-            <div class="schoolContent flex flex-col gap-2">
-                <label for="labelSchool">FORMAÇÃO ESCOLAR:</label>
+            <div class="formation flex flex-col gap-2">
+                <label class="flex justify-between" for="labelSchool">FORMAÇÃO ESCOLAR: <button
+                        class="clearBtn">limpar</button></label>
                 <div class="grid grid-cols-2 grid-rows-3 gap-2 flex-wrap">
                     <input class="input col-start-1 col-end-3" type="text" placeholder="Ensino médio..."
                         id="labelSchool">
@@ -37,7 +38,8 @@
                 </ul>
             </div>
             <div class="experience flex flex-col gap-2">
-                <label for="labelExp">EXPERIÊNCIAS PROFISSIONAIS:</label>
+                <label class="flex justify-between" for="labelExp">EXPERIÊNCIAS PROFISSIONAIS: <button
+                        class="clearBtn">limpar</button></label>
                 <div class="grid items-center flex-wrap gap-2 grid-cols-2">
                     <input class="input col-start-1 col-end-3" type="text" placeholder="Empresa" id="labelExp">
                     <input class="input" type="number" placeholder="Ano de início" min="1900">
@@ -57,8 +59,9 @@
                     <!-- <button class="buttonAdd">Adicionar</button> -->
                 </div>
             </div>
-            <div class="formationSchool flex flex-wrap items-center gap-2">
-                <label for="labelFormation">FORMAÇÃO TÉCNICA E/OU SUPERIOR:</label>
+            <div class="formationSchool flex flex-col gap-2">
+                <label class="flex justify-between" for="labelFormation">FORMAÇÃO TÉCNICA E/OU SUPERIOR: <button
+                        class="clearBtn">limpar</button></label>
                 <div class="w-full grid grid-cols-2 grid-rows-3 flex-wrap gap-2">
                     <input class="input col-start-1 col-end-3" type="text" placeholder="Instituto de ensino"
                         id="labelFormation">
@@ -71,7 +74,8 @@
                 </ul>
             </div>
             <div class="progress flex flex-col gap-2">
-                <label for="labelProf">CURSOS PROFISSIONALIZANTES:</label>
+                <label class="flex justify-between" for="labelProf">CURSOS PROFISSIONALIZANTES: <button
+                        class="clearBtn">limpar</button></label>
                 <div class="grid grid-cols-2 items-center flex-wrap gap-2">
                     <input class="input col-start-1 col-end-3" type="text" placeholder="Instituto de ensino"
                         id="labelProf">
@@ -97,7 +101,7 @@
             </div>
             <button class="buttonAdd create w-max m-auto" onclick="handleInputs()">PRÉ-VISUALIZAR</button>
         </form>
-        <section class="modal min-h-fit py-[200px] bg-white absolute top-0 hidden">
+        <section class="modal min-h-fit px-10 py-[200px] bg-white absolute top-0 left-0 transform hidden">
             <div class="areaPrint w-[643px] p-6 shadow shadow-slate-400 rounded-lg m-auto bg-white">
                 <div class="flex justify-between min-h-32 text-2xl font-semibold">
                     <div class="flex-1">

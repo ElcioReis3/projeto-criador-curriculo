@@ -605,6 +605,11 @@ video {
   border-color: rgb(100 116 139 / var(--tw-border-opacity, 1));
 }
 
+.clearBtn {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
 li {
   margin-left: 1.75rem;
   list-style-type: disc;
@@ -620,6 +625,10 @@ label {
 
 .absolute {
   position: absolute;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .top-0 {
@@ -686,10 +695,6 @@ label {
   height: 153px;
 }
 
-.min-h-10 {
-  min-height: 2.5rem;
-}
-
 .min-h-14 {
   min-height: 3.5rem;
 }
@@ -733,10 +738,6 @@ label {
   width: min-content;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -749,13 +750,7 @@ label {
   flex: 1 1 0%;
 }
 
-.-translate-x-2\/4 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-2\/4 {
-  --tw-translate-x: 50%;
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -793,6 +788,10 @@ label {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-2 {
@@ -855,6 +854,11 @@ label {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .py-8 {
