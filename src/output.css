@@ -711,8 +711,12 @@ label {
   width: 115px;
 }
 
-.w-\[673px\] {
-  width: 673px;
+.w-\[473px\] {
+  width: 473px;
+}
+
+.w-\[643px\] {
+  width: 643px;
 }
 
 .w-full {
@@ -733,18 +737,6 @@ label {
   width: 100vw;
 }
 
-.w-\[473px\] {
-  width: 473px;
-}
-
-.w-\[573px\] {
-  width: 573px;
-}
-
-.w-\[643px\] {
-  width: 643px;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -755,6 +747,16 @@ label {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.-translate-x-2\/4 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-2\/4 {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .list-disc {
