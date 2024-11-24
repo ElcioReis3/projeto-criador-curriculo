@@ -11,6 +11,8 @@ const btnsClear = document.querySelectorAll('.clearBtn');
 
 function closeModal() {
     document.querySelector('.modal').style.display = 'none'
+    document.querySelector('.formDisplay').classList.remove('hidden')
+
 }
 
 buttons.forEach((item) => {
