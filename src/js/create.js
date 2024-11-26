@@ -37,7 +37,7 @@ buttons.forEach((item) => {
 function handleInputs() {
     if (inputs[0].value.trim() === '' || inputs[14].value.trim() === '' || inputs[15].value.trim() === '') return
     document.querySelector('.formDisplay').classList.add('hidden')
-    document.querySelector('.modal').style.display = 'inline-block'
+    document.querySelector('.modal').style.display = 'flex'
     document.querySelector('.modal').style.opacity = '1'
     document.querySelectorAll('.modal').forEach((item) => {
         const spans = item.querySelectorAll('span')

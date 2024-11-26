@@ -10,7 +10,7 @@
 
 <body>
 
-    <main class="bg-white">
+    <main class="container px-4 bg-white">
         <h1 class="font-semibold text-center text-xl py-4">Gere seu currículo</h1>
         <form
             class="formDisplay flex gap-2 flex-col flex-wrap justify-center font-semibold shadow-lg px-4 py-6 bg-slate-200 rounded-lg border max-w-2xl m-auto"
@@ -101,10 +101,10 @@
             </div>
             <button class="buttonAdd create w-max m-auto" onclick="handleInputs()">PRÉ-VISUALIZAR</button>
         </form>
-        <section class="modal w-screen py-[200px] bg-white m-auto hidden opacity-0 ">
-            <!-- absolute top-0 left-0 transform hidden -->
-            <div class="areaPrint w-[643px] p-6 shadow shadow-slate-400 rounded-lg m-auto bg-white">
-                <div class="flex justify-between min-h-32 text-2xl font-semibold">
+        <section
+            class="modal min-w-[643px] max-w-2xl py-[200px] bg-white items-center flex-col m-auto hidden opacity-0">
+            <div class="areaPrint w-full p-6 shadow shadow-slate-400 rounded-lg bg-white">
+                <div class="flex justify-between min-h-32 text-sm font-semibold">
                     <div class="flex-1">
                         <span class="">Name</span>
                         <div class="flex flex-col border-t border-slate-500 text-sm font-semibold">
@@ -151,13 +151,13 @@
             </div>
 
 
-            <div class="w-[473px] flex flex-wrap justify-between m-auto">
+            <div class="w-4/5 flex flex-wrap justify-between m-auto">
                 <button onclick="imprimir()" class="text-slate-600 font-semibold">Imprimir</button>
                 <button onclick="closeModal()" class="text-slate-600 font-semibold">Fechar</button>
             </div>
         </section>
     </main>
-    <footer class="w-full bg-gray-900 h-28 p-4 text-center mt-4">
+    <footer class="w-dvw bg-gray-900 h-28 p-4 text-center mt-4">
         <p class=" text-gray-500 m-auto">Criado por
         </p>
         <a class="font-semibold text-gray-100" href="https://link-elcio-reis.netlify.app">&copy;ÉlcioErviçosOn</a>
